@@ -1,6 +1,6 @@
 # Python by Building: code
 
-All the code from **Python by Building: A Project-Based Tutorial** by Ronald Allan V. Tomimbang:
+All the code from **Python by Building: A Project-Based Learning Approach** by Ronald Allan V. Tomimbang:
 33 chapters, 33 chapter projects, 12 capstone projects and the selected exercise solutions.
 Everything runs on Python 3.12 or newer, in VS Code, PyCharm, Jupyter/Colab or IDLE/Thonny.
 
