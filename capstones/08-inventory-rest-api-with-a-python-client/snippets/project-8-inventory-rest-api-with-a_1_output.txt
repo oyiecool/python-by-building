@@ -1,0 +1,10 @@
+  added   LT-001
+  ...
+Category   Count      Total cost   Share
+license        1    1,150,000.00     60%
+server         1      420,000.00     22%
+network        1      180,000.00      9%
+laptop         2      137,000.00      7%
+printer        1       38,000.00      2%
+
+Laptops and owners: LT-001=ana, LT-002=ben

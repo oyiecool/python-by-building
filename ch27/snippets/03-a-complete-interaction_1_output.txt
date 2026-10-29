@@ -1,0 +1,3 @@
+Laptop 45000
+Phone 18000
+Welcome, demo!

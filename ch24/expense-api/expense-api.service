@@ -1,0 +1,13 @@
+[Unit]
+Description=Expense API
+After=network.target
+
+[Service]
+User=expense
+WorkingDirectory=/opt/expense-api
+Environment=EXPENSE_DB=/var/lib/expense-api/expenses.db
+ExecStart=/opt/expense-api/.venv/bin/uvicorn expense_api:app --host 127.0.0.1 --port 8000
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

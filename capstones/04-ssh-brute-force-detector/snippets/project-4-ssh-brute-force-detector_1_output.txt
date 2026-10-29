@@ -1,0 +1,13 @@
+IP address       Failures  Users tried                 Status
+203.0.113.45          180  admin, oracle, root, test   ATTACK
+198.51.100.7           60  root, ubuntu                ATTACK
+192.0.2.99             25  root                        ATTACK
+10.0.0.21               5  ana                         WHITELISTED
+
+!!! Successful logins after a brute-force attempt (investigate now):
+   2026-10-28 21:00  root@192.0.2.99 after 25 failures
+
+Suggested firewall commands (review before running):
+   sudo ufw deny from 198.51.100.7 to any port 22
+   sudo ufw deny from 203.0.113.45 to any port 22
+   sudo ufw deny from 192.0.2.99 to any port 22

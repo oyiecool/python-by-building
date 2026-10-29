@@ -1,0 +1,14 @@
+>>> type(42)
+<class 'int'>
+>>> type("42")
+<class 'str'>
+>>> int("42") + 1
+43
+>>> float("3.5")
+3.5
+>>> str(99) + " bottles"
+'99 bottles'
+>>> bool(0), bool(""), bool("hi")
+(False, False, True)
+>>> int(3.99)
+3

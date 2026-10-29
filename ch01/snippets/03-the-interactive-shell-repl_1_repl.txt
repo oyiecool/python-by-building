@@ -1,0 +1,5 @@
+>>> 7 * 6
+42
+>>> "py" + "thon"
+'python'
+>>> import this

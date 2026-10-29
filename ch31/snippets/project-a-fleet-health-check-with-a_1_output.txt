@@ -1,0 +1,7 @@
+HOST     STATUS        FREE %  BANNER
+build01  FAILED          11.7  -  / has only 11.7% free
+db01     FAILED          11.7  -  / has only 11.7% free
+web01    FAILED          11.7  -  / has only 11.7% free
+web02    FAILED          11.7  -  / has only 11.7% free
+
+4 hosts, changed on 0, failed on 4, unreachable 0. Report: fleet_report_20261029_123710.csv

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Stats</h1>
+<p>{{ done }} of {{ total }} tasks done{% if total %} ({{ (100 * done / total)|round|int }}%){% endif %}.</p>
+<ul>{% for owner, counts in by_owner.items() %}
+  <li>{{ owner }}: {{ counts[0] }} open, {{ counts[1] }} done</li>{% endfor %}</ul>
+{% endblock %}

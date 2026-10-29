@@ -1,0 +1,10 @@
+passgen-tool/
+  pyproject.toml          project metadata, dependencies, tool settings
+  README.md
+  src/
+    passgen/
+      __init__.py         makes the folder a package; exposes the public API
+      core.py             the logic
+      cli.py              the command-line interface
+  tests/
+    test_core.py

@@ -1,0 +1,5 @@
+targets = pd.DataFrame({"region": ["North", "South", "East"], "target": [400000, 300000, 350000]})
+actual = sales.groupby("region", as_index=False)["revenue"].sum()
+result = actual.merge(targets, on="region", how="left")
+result["achieved"] = (result["revenue"] / result["target"]).map("{:.0%}".format)
+print(result)

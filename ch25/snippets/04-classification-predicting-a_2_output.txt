@@ -1,0 +1,3 @@
+logistic  test 1.000  cv 0.983 ± 0.014
+tree      test 0.956  cv 0.888 ± 0.040
+forest    test 1.000  cv 0.967 ± 0.021

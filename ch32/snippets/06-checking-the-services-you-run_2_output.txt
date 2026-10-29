@@ -1,0 +1,6 @@
+{'host': 'localhost', 'tls': 'TLSv1.3', 'issuer': 'Lab Ops', 'expires': datetime.date(2026, 11, 18), 'days_left': 19}
+  missing Content-Security-Policy: limits where scripts may load from (stops most XSS)
+  missing X-Frame-Options: stops click-jacking in frames (or CSP frame-ancestors)
+  missing Referrer-Policy: limits what URLs leak to other sites
+untrusted -> SSLCertVerificationError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate
+wrong name -> SSLCertVerificationError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch

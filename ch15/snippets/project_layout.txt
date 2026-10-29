@@ -1,0 +1,7 @@
+myapp/
+  app.py
+  templates/
+    base.html
+    tasks.html
+  static/
+    style.css

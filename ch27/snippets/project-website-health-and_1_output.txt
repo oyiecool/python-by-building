@@ -1,0 +1,8 @@
+WARN 200   532 ms  Shop home                     http://127.0.0.1:8099/index.html
+      analytics failed to load; Failed to load resource: ... 404 (File not found); http://127.0.0.1:8099/missing.png
+WARN 200   523 ms  Log in                        http://127.0.0.1:8099/login.html
+      http://127.0.0.1:8099/nope.html (404)
+WARN 404   523 ms  Error response                http://127.0.0.1:8099/gone.html
+      Failed to load resource: the server responded with a status of 404 (File not found)
+
+Report: pagecheck.csv   Screenshots: screenshots/

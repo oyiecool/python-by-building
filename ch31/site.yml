@@ -1,0 +1,20 @@
+# site.yml - daily health and baseline playbook
+- name: Fleet health and baseline
+  hosts: all
+  gather_facts: false
+  vars:
+    min_free_pct: 15
+    motd_path: /etc/motd
+  tasks:
+    - name: Check free disk space
+      disk_guard:
+        path: /
+        min_free_pct: "{{ min_free_pct }}"
+      register: disk
+
+    - name: Make sure the login banner names the owner team
+      ansible.builtin.lineinfile:
+        path: "{{ motd_path }}"
+        line: "Managed by Ansible - {{ env | upper }} - contact ops@example.com"
+        create: true
+        mode: "0644"

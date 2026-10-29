@@ -1,0 +1,7 @@
+>>> from typing_trainer import wpm, accuracy, mistakes
+>>> wpm(250, 60), wpm(100, 30)
+(50.0, 40.0)
+>>> accuracy("hello world", "hellp world")
+90.9090909090909
+>>> mistakes("abcd", "abxd")
+[2]

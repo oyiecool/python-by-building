@@ -1,0 +1,16 @@
+$ ansible-inventory -i inventory.py --graph
+@all:
+  |--@ungrouped:
+  |--@ci:
+  |  |--build01
+  |--@db:
+  |  |--db01
+  |--@dev:
+  |  |--build01
+  |--@prod:
+  |  |--web01
+  |  |--web02
+  |  |--db01
+  |--@web:
+  |  |--web01
+  |  |--web02

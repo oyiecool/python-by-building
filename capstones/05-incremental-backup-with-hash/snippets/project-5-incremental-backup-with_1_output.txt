@@ -1,0 +1,14 @@
+$ python syncbackup.py demo_src demo_bak
+INFO 2 new, 0 changed, 0 deleted, 0 unchanged
+  would new      a.txt
+  would new      docs/r.md
+Dry run: nothing copied. Add --apply to run the backup.
+$ python syncbackup.py demo_src demo_bak --apply
+...                         (edit a.txt, delete docs/r.md, add b.txt)
+$ python syncbackup.py demo_src demo_bak --apply
+INFO 1 new, 1 changed, 1 deleted, 0 unchanged
+INFO copied b.txt
+INFO copied a.txt
+INFO archived deleted file docs/r.md
+$ python syncbackup.py demo_src demo_bak --verify
+INFO Verified 2 files, 0 problems

@@ -1,0 +1,5 @@
+$ python daily_report.py --dry-run
+Saved report.eml: [OK] web01 daily report 2026-10-25
+
+$ SMTP_HOST=127.0.0.1 SMTP_PORT=8025 python daily_report.py --to ana@example.com
+Sent: [OK] web01 daily report 2026-10-25

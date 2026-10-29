@@ -1,0 +1,5 @@
+name,address,group,env,connection
+web01,10.0.1.11,web,prod,local
+web02,10.0.1.12,web,prod,local
+db01,10.0.2.21,db,prod,local
+build01,10.0.9.31,ci,dev,local

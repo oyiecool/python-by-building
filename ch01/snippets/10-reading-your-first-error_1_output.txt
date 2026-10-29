@@ -1,0 +1,4 @@
+  File "hello.py", line 4
+    print("Welcome to Python."
+         ^
+SyntaxError: '(' was never closed

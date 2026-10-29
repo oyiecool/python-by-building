@@ -1,0 +1,7 @@
+Readings: 4,032 from 2026-10-12 to 2026-10-25
+Busiest hour of day: 14:00 (avg CPU 48%)
+Quietest hour:       02:00 (avg CPU 12%)
+CPU anomalies: 25 readings
+   Tue 2026-10-13 04:40  97%
+   ...
+Disk grows 0.43 points/day; reaches 90% around 2026-11-25

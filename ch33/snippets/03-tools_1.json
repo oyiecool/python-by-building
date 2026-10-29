@@ -1,0 +1,6 @@
+{"name": "disk_usage",
+ "description": "Disk usage of a filesystem on a server, from the monitoring system.",
+ "input_schema": {"type": "object",
+                  "properties": {"host": {"type": "string", "description": "server name, e.g. web01"},
+                                 "path": {"type": "string", "description": "mount point, e.g. /"}},
+                  "required": ["host", "path"]}}

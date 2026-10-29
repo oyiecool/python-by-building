@@ -1,0 +1,10 @@
+Baseline (always predict the mean): MAE  12.8 points
+Random forest:                      MAE   4.0 points, R² 0.78
+What drives CPU: hour 77%, is_weekend 13%, weekday 10%
+
+20 readings more than 30 points above expectation:
+  Tue 13 Oct 04:55  cpu  96.7%  expected  13.5%
+  Tue 13 Oct 04:50  cpu  96.7%  expected  16.0%
+  Sat 17 Oct 23:50  cpu  92.7%  expected  12.2%
+  ...
+Isolation Forest flagged 41 readings; 20 agree with the regression.

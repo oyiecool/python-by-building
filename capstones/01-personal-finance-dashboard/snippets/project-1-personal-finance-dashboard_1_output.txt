@@ -1,0 +1,8 @@
+Month           Spent      Budget        Diff
+2026-01        30,164      29,500        -664
+2026-02        28,503      29,500        +997
+...
+2026-09        29,978      29,500        -478
+
+Average month: 28,869   Projected year: 346,427
+Category most over budget on average: Utilities (+73/month)

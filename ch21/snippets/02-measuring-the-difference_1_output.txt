@@ -1,0 +1,5 @@
+I/O, sequential               4.00 s
+I/O, 8 threads                0.50 s     # 8x faster: the waits overlap
+CPU, sequential               1.15 s
+CPU, 4 threads (GIL)          1.16 s     # no gain: one thread computes at a time
+CPU, 4 processes              0.54 s     # about 2x: limited by the 2 cores

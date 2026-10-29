@@ -1,0 +1,18 @@
+[
+  {"id": "GHSA-j8r2-6x86-q33q", "aliases": ["CVE-2023-32681", "PYSEC-2023-74"],
+   "summary": "Unintended leak of Proxy-Authorization header in requests",
+   "database_specific": {"severity": "MODERATE"},
+   "affected": [{"package": {"ecosystem": "PyPI", "name": "requests"},
+                 "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "2.3.0"}, {"fixed": "2.31.0"}]}]}]},
+  {"id": "GHSA-v845-jxx5-vc9f", "aliases": ["CVE-2023-43804", "PYSEC-2023-192"],
+   "summary": "Cookie HTTP header isn't stripped on cross-origin redirects",
+   "database_specific": {"severity": "HIGH"},
+   "affected": [{"package": {"ecosystem": "PyPI", "name": "urllib3"},
+                 "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "0"}, {"fixed": "1.26.17"}]},
+                            {"type": "ECOSYSTEM", "events": [{"introduced": "2.0.0"}, {"fixed": "2.0.6"}]}]}]},
+  {"id": "GHSA-h5c8-rqwp-cp95", "aliases": ["CVE-2024-22195"],
+   "summary": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter",
+   "database_specific": {"severity": "MODERATE"},
+   "affected": [{"package": {"ecosystem": "PyPI", "name": "jinja2"},
+                 "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "0"}, {"fixed": "3.1.3"}]}]}]}
+]

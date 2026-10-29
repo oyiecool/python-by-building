@@ -1,0 +1,4 @@
+body { font-family: system-ui, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; }
+table { width: 100%; border-collapse: collapse; } td, th { padding: .4rem; border-bottom: 1px solid #ddd; text-align: left; }
+tr.done td { color: #999; text-decoration: line-through; } tr.high td:nth-child(4) { color: #c0392b; font-weight: 600; }
+.flash { background: #eef6ff; padding: .5rem; border-radius: 6px; }

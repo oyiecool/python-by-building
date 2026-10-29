@@ -1,0 +1,9 @@
+Loan amount: 1500000
+Annual interest rate (%): 7
+Term in years: 20
+
+Monthly payment   :      11,629.49
+Number of payments:            240
+Total paid        :   2,791,077.46
+Total interest    :   1,291,077.46
+Interest share    :          46.3%

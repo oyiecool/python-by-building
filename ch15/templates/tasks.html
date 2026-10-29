@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Task board</h1>
+<form method="post" action="{{ url_for('add') }}">
+  <input name="title" placeholder="New task" required>
+  <input name="owner" placeholder="Owner">
+  <select name="priority">
+    {% for p in priorities %}<option {% if p == 'normal' %}selected{% endif %}>{{ p }}</option>{% endfor %}
+  </select>
+  <button>Add</button>
+</form>
+<p>Show: <a href="?show=open">open</a> | <a href="?show=all">all</a></p>
+<table>
+  <tr><th></th><th>Task</th><th>Owner</th><th>Priority</th><th>Created</th></tr>
+  {% for t in tasks %}
+  <tr class="{{ 'done' if t.done }} {{ t.priority }}">
+    <td><form method="post" action="{{ url_for('toggle', task_id=t.id) }}">
+        <button>{{ '↩' if t.done else '✓' }}</button></form></td>
+    <td>{{ t.title }}</td><td>{{ t.owner }}</td><td>{{ t.priority }}</td><td>{{ t.created }}</td>
+  </tr>
+  {% else %}
+  <tr><td colspan="5">Nothing to do.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

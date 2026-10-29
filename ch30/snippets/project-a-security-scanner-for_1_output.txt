@@ -1,0 +1,11 @@
+sample/app.py:10: [MEDIUM] S6 hard-coded secret
+    fix: read it from an environment variable or a secrets manager
+sample/app.py:15: [HIGH  ] S2 subprocess with shell=True
+    fix: pass a list of arguments and keep shell=False
+sample/app.py:19: [HIGH  ] S5 SQL built with an f-string, + or %
+    fix: use ? placeholders (Chapter 16)
+...
+sample/app.py:44: [HIGH  ] S1 eval()/exec() runs arbitrary code
+    fix: parse the data instead (json, ast.literal_eval)
+
+11 findings: 5 high, 4 medium, 2 low

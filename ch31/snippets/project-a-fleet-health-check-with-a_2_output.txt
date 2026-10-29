@@ -1,0 +1,11 @@
+$ python fleet.py --min-free 10 --motd "$PWD/lab/{{ inventory_hostname }}.motd"
+build01  ok              11.7  changed
+db01     ok              11.7  changed
+web01    ok              11.7  changed
+web02    ok              11.7  changed
+4 hosts, changed on 4, failed on 0, unreachable 0.
+
+$ python fleet.py --min-free 10 --motd ...        # second run: nothing left to do
+build01  ok              11.7  ok
+...
+4 hosts, changed on 0, failed on 0, unreachable 0.

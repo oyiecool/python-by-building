@@ -1,0 +1,2 @@
+{'type': 'enum', 'loc': ['body', 'category'],
+ 'msg': "Input should be 'food', 'transport', 'utilities', 'rent', 'health' or 'other'", ...}

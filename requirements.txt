@@ -1,0 +1,28 @@
+# Third-party libraries used in the book (Python 3.12+)
+pytest
+pytest-cov
+requests
+beautifulsoup4
+pandas
+openpyxl
+matplotlib
+numpy
+psutil
+flask
+fastapi[standard]
+httpx
+pygame
+python-docx
+reportlab
+pypdf
+aiohttp
+scikit-learn
+playwright
+pytest-playwright
+streamlit
+cryptography
+ansible-core; sys_platform != "win32"
+ansible-runner; sys_platform != "win32"
+packaging
+pip-audit
+anthropic

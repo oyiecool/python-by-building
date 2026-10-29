@@ -1,0 +1,7 @@
+multipart/mixed                 the whole message
+  multipart/alternative         "the same content, two ways"
+    text/plain                  for clients that cannot show HTML
+    multipart/related           HTML plus the images it shows
+      text/html
+      image/png                 shown inline via a cid: reference
+  text/csv                      an attachment
